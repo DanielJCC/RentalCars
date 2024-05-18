@@ -57,7 +57,7 @@ public class CarController {
     @PutMapping("/returnCar/{id}")
     public ResponseEntity<CarDto> returnCar(@PathVariable("id") UUID id) {
         try {
-            CarDto carReserved = carService.reserveCar(id);
+            CarDto carReserved = carService.returnCar(id);
             return ResponseEntity.ok().body(carReserved);
         } catch (RuntimeException e){
             return ResponseEntity.notFound().build();
