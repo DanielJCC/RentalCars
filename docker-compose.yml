@@ -25,10 +25,10 @@ services:
       POSTGRES_USER: rentalCars
       POSTGRES_PASSWORD: 1234
     ports:
-      - 5433:5433
+      - 5432:5432
     expose:
-      - 5433
-    command: -p 5433
+      - 5432
+    command: -p 5432
 
   ### Postgres database for Payments
   db-payments:
@@ -40,9 +40,9 @@ services:
       POSTGRES_USER: rentalCars
       POSTGRES_PASSWORD: 1234
     ports:
-      - 5432:5432
+      - 5433:5433
     expose:
-      - 5432
-    command: -p 5432
+      - 5433
+    command: -p 5433
 ## TODO:
 ### VERIFICAR LOS CONTENEDORES EN DOCKER DESKTOP, PUEDE QUE HAYA UNO REPETIDO QUE SE LLAME PARECIDO
