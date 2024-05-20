@@ -7,17 +7,17 @@
 		<artifactId>RentalCars</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>api-gateway</artifactId>
+	<artifactId>discovery-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-gateway</name>
-	<description>El gateway de nuestro microbodrio</description>
+	<name>discovery-server</name>
+	<description>El servidor eureka de nuestro microbodrio</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway-mvc</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -41,23 +41,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- Eureka client -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
 	</dependencies>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>
