@@ -2,6 +2,8 @@ package com.microservicios.booking_service.controller;
 
 import com.microservicios.booking_service.dto.BookingDto;
 import com.microservicios.booking_service.dto.BookingToSaveDto;
+import com.microservicios.booking_service.feingclients.CarFeingClient;
+import com.microservicios.booking_service.feingclients.CarResponse;
 import com.microservicios.booking_service.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
