@@ -58,3 +58,7 @@ En el application.properties del api-gateway cambiar un parámetro:
 Lo que se pone ahí se saca desde la vista del cliente, presionar en "Credentials", copiar el "Client secret" y pegarlo ahí.
 
 Ya me cansé
+
+http://localhost:8080/*
+http://localhost:8080/login/oauth2/code/keycloak
+https://oauth.pstmn.io/v1/browser-callback
