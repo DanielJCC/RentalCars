@@ -46,7 +46,7 @@ Por último asignar los roles en el apartado de "Role mapping" asignando los rol
 ### Paso 8
 Ir al apartado de "Clients" y crear un cliente con el botón "Create client"
 ![Imagen](src/step8.png)
-* En client_id colocar "rentarCars_client" y en el "Client type" colocar OpenID Connect. Darle "next"
+* En client_id colocar "rentalCars_client" y en el "Client type" colocar OpenID Connect. Darle "next"
 * Colocar "Client authentication" y "Authorization" en On y en el "Authentication flow" dejar seleccionados "Standard fine", "Direct access grants", "OAuth 2.0" presionar "next"
 * En "Valid redirect URIs" y en "Web Origins" colocar lo siguiente:
 ![Imagen](src/Step8-1.png)
